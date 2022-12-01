@@ -1,3 +1,6 @@
 1 小猫 5 male 睡觉 0
 2 小狗 6 male 晒太阳 0
 3 小老虎 2 famale 散步 0
+4 吉先锋 20 male 卷 0
+5 轩轩 18 male 打王者 0
+6 胖子 18 male COC 0

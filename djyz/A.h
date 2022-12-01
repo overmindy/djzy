@@ -27,15 +27,20 @@ void create_user(Manager** head);//初始化用户信息
 void create_AnimalInfo(Animal** head);//初始化动植物信息
 void destory_linkA(Animal** head);//删除释放动植物链表
 void destory_linka(Manager** head);//删除释放用户链表
+void save_user(Manager* head);
+void save_AnimalInfo(Animal* head);//将链表数据写入文档
+void qinkong();//清空缓存区
 
 void login();//登录账号,从文件录入信息
 void registeruser();//注册
 void print_all_user();//显示所有用户信息
 
-void printmenu();//主菜单显示
-void enterInfo();//输入新增动植物信息
-void chageInfo();//修改某一动植物信息，编号或名字
-AnimalInfo searchInfo();//通过编号或名字搜索
+void printmenu1();//主菜单显示
+void printmenu2();//功能菜单显示
+void enterInfo(Animal* head);//输入新增动植物信息
+void changeInfo(Animal *head);//修改某一动植物信息，编号或名字
+Animal* find_animal(Animal* head, char* str);//通过名字寻找
+Animal* find_animal(Animal *head,int number);//通过编号寻找数据
 
 void printInfo();//通过编号显示信息
 void remark();//评论

@@ -8,16 +8,21 @@ int main() {
 	Animal* Animallink = NULL;
 	create_user(&accountlink);
 	create_AnimalInfo(&Animallink);//初始化
-	//测试
-	Manager* mov1 = accountlink;
-	mov1 = mov1->next->next;
-	printf("%s\t%s\t%d\n", mov1->name, mov1->password, mov1->power);
 
-	Animal* mov2 = Animallink;
-	mov2 = mov2->next->next;
-	printf("%d %s %d %s %s %d\n",
-		(mov2->data).num, (mov2->data).name, (mov2->data).age, (mov2->data).sex,
-		(mov2->data).habits, &(mov2->data).stars);
+	Animal* p = NULL;
+	p = find_animal(Animallink, 4);
+	if (p != NULL) {
+		printf("%s\n", p->data.name);
+	}//测试按编号搜索输出
+	char str[] = { "轩轩" };
+	p = find_animal(Animallink, str);
+	if (p != NULL) {
+		printf("%s\n", p->data.habits);
+	}//测试按名字搜索输出
+	changeInfo(Animallink);//测试信息修改
+
+	save_user(accountlink);
+	save_AnimalInfo(Animallink);
 
 	destory_linkA(&Animallink);
 	destory_linka(&accountlink);//销毁链表

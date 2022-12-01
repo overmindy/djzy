@@ -1,3 +1,2 @@
 ﻿  main.cpp
-E:\code\vs2019\djyz\main.cpp(18,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 6 拥有了类型“int *”
   djyz.vcxproj -> E:\code\vs2019\djyz\Debug\djyz.exe
